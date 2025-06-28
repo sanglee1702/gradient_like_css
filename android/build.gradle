@@ -4,18 +4,17 @@ version '1.0'
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
-
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath 'com.android.tools.build:gradle:8.1.4' // Ensure compatibility with API 35
     }
 }
 
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 
@@ -23,10 +22,11 @@ apply plugin: 'com.android.library'
 
 android {
     namespace 'com.azukisiromochi.gradient_like_css'
-    compileSdkVersion 28
+    compileSdk 35 // Updated to Android 16 (API 35)
 
     defaultConfig {
-        minSdkVersion 16
+        minSdk 16
+        targetSdk 35 // Updated to Android 16 (API 35)
     }
     lintOptions {
         disable 'InvalidPackage'

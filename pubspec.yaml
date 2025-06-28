@@ -1,0 +1,31 @@
+name: gradient_like_css
+description: The gradient_like_css package for Flutter allows you to experience CSS-like gradients in your Flutter app.
+version: 1.0.1
+homepage: https://github.com/azukisiromochi/gradient_like_css
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # https://github.com/google/tuple.dart
+  tuple: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # https://pub.dev/packages/pedantic_mono
+  pedantic_mono: ^1.18.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.azukisiromochi.gradient_like_css
+        pluginClass: GradientLikeCssPlugin
+      ios:
+        pluginClass: GradientLikeCssPlugin

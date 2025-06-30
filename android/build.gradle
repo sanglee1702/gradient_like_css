@@ -22,11 +22,11 @@ apply plugin: 'com.android.library'
 
 android {
     namespace 'com.azukisiromochi.gradient_like_css'
-    compileSdk 35 // Updated to Android 16 (API 35)
+    compileSdk 34 // Updated to Android 16 (API 34)
 
     defaultConfig {
         minSdk 16
-        targetSdk 35 // Updated to Android 16 (API 35)
+        targetSdk 34 // Updated to Android 16 (API 34)
     }
     lintOptions {
         disable 'InvalidPackage'
